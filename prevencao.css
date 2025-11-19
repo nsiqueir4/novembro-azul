@@ -1,4 +1,4 @@
-* {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
@@ -37,6 +37,9 @@
         nav {
             background: #163a5f;
             padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
 
@@ -56,17 +59,14 @@
             transition: background 0.3s;
         }
 
-        nav a:hover {
-            background: #2a5298;
-        }
-
-        nav a.active {
+        nav a:hover, nav a.active {
             background: #2a5298;
         }
 
         main {
             min-height: calc(100vh - 300px);
             padding: 3rem 0;
+            animation: fadeIn 0.5s;
         }
 
         .hero {
@@ -77,6 +77,30 @@
             margin-bottom: 2rem;
             text-align: center;
         }
+
+        .lang-switch {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 9999;
+        }
+
+        .lang-switch img {
+            width: 28px;
+            height: 20px;
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .lang-switch img:hover {
+            transform: scale(1.15);
+            opacity: 0.8;
+        }
+
 
         .hero h2 {
             font-size: 2.8rem;
@@ -183,4 +207,9 @@
             h1 { font-size: 2rem; }
             .hero h2 { font-size: 2rem; }
             nav ul { flex-direction: column; gap: 0.5rem; align-items: center; }
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }

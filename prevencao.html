@@ -3,129 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novembro Azul - Prevenção</title>
+    <title data-i18n="pageTitle">Novembro Azul - Prevenção</title>
     <link rel="stylesheet" href="prevencao.css">
 </head>
 <body>
+
+    <!-- Botão de bandeiras -->
+    <div class="lang-switch">
+        <img src="https://flagcdn.com/w20/br.png" onclick="changeLanguage('pt')" alt="PT" title="Português">
+        <img src="https://flagcdn.com/w20/us.png" onclick="changeLanguage('en')" alt="EN" title="English">
+        <img src="https://flagcdn.com/w20/es.png" onclick="changeLanguage('es')" alt="ES" title="Español">
+        <img src="https://flagcdn.com/w20/fr.png" onclick="changeLanguage('fr')" alt="FR" title="Français">
+        <img src="https://flagcdn.com/w20/de.png" onclick="changeLanguage('de')" alt="DE" title="Deutsch">
+        <img src="https://flagcdn.com/w20/it.png" onclick="changeLanguage('it')" alt="IT" title="Italiano">
+        <img src="https://flagcdn.com/w20/cn.png" onclick="changeLanguage('zh')" alt="ZH" title="中文">
+        <img src="https://flagcdn.com/w20/jp.png" onclick="changeLanguage('ja')" alt="JA" title="日本語">
+        <img src="https://flagcdn.com/w20/sa.png" onclick="changeLanguage('ar')" alt="AR" title="العربية">
+    </div>
+
     <header>
         <div class="container">
-            <h1>🔵 Novembro Azul</h1>
-            <p class="subtitle">Conscientização sobre a saúde do homem</p>
+            <h1 data-i18n="headerTitle">🔵 Novembro Azul</h1>
+            <p class="subtitle" data-i18n="headerSubtitle">Conscientização sobre a saúde do homem</p>
         </div>
     </header>
 
     <nav>
         <div class="container">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#" class="active">Prevenção</a></li>
-                <li><a href="exames.html">Exames</a></li>
+                <li><a href="index.html" data-i18n="menuHome">Início</a></li>
+                <li><a href="#" class="active" data-i18n="menuPrev">Prevenção</a></li>
+                <li><a href="exames.html" data-i18n="menuExam">Exames</a></li>
+                <li><a href="https://wa.me/?text=Olá! Tenho dúvidas sobre saúde masculina e o Novembro Azul" target="_blank" style="background: #25d366; color: white; border-radius: 4px; padding: 0.5rem 1rem; display: inline-block;">💬 Dicas e Cuidados</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
         <div class="container">
+
             <div class="hero">
-                <h2>Prevenção e Cuidados</h2>
-                <p>Hábitos saudáveis podem reduzir significativamente o risco de desenvolver câncer de próstata e outras doenças.</p>
-            </div>
-
-            <div class="content-section">
-                <h3>Fatores de Risco</h3>
-                <p>Conhecer os fatores de risco é fundamental para tomar decisões conscientes sobre sua saúde. Alguns fatores não podem ser modificados, mas outros estão diretamente relacionados ao estilo de vida.</p>
-                
-                <ul class="custom-list risk-list">
-                    <li><strong>Idade:</strong> O risco aumenta significativamente após os 50 anos. Cerca de 75% dos casos ocorrem em homens acima de 65 anos.</li>
-                    <li><strong>Histórico familiar:</strong> Ter pai, irmão ou filho que teve câncer de próstata aumenta o risco em 2 a 3 vezes.</li>
-                    <li><strong>Raça:</strong> Homens negros têm maior incidência e mortalidade por câncer de próstata.</li>
-                    <li><strong>Obesidade:</strong> Estudos mostram que homens obesos têm maior risco de desenvolver formas mais agressivas da doença.</li>
-                    <li><strong>Alimentação inadequada:</strong> Dieta rica em gorduras animais e pobre em frutas e vegetais aumenta o risco.</li>
-                    <li><strong>Sedentarismo:</strong> A falta de atividade física regular está associada a diversos tipos de câncer.</li>
-                </ul>
-
-                <div class="warning-box">
-                    <strong>Atenção:</strong> Se você possui mais de um fator de risco, converse com seu médico sobre iniciar os exames preventivos mais cedo, por volta dos 45 anos.
+                <div class="page active">
+                    <h2 data-i18n="prevTitle">Prevenção e Cuidados</h2>
+                    <p data-i18n="prevDesc">Hábitos saudáveis podem reduzir significativamente o risco de desenvolver câncer de próstata e outras doenças.</p>
                 </div>
             </div>
 
             <div class="content-section">
-                <h3>Hábitos Saudáveis para Prevenção</h3>
-                <p>Embora não seja possível prevenir completamente o câncer de próstata, adotar um estilo de vida saudável pode reduzir significativamente os riscos:</p>
+                <h3 data-i18n="riskFactors">Fatores de Risco</h3>
+                <p data-i18n="riskIntro">Conhecer os fatores de risco é fundamental para tomar decisões conscientes sobre sua saúde.</p>
                 
+                <ul class="custom-list risk-list">
+                    <li data-i18n="riskAge"><strong>Idade:</strong> O risco aumenta significativamente após os 50 anos.</li>
+                    <li data-i18n="riskFamily"><strong>Histórico familiar:</strong> Ter pai, irmão ou filho com a doença aumenta o risco.</li>
+                    <li data-i18n="riskRace"><strong>Raça:</strong> Homens negros têm maior incidência.</li>
+                    <li data-i18n="riskObesity"><strong>Obesidade:</strong> Relacionada a casos mais agressivos.</li>
+                    <li data-i18n="riskDiet"><strong>Alimentação inadequada:</strong> Dietas ricas em gorduras elevam o risco.</li>
+                    <li data-i18n="riskSedentary"><strong>Sedentarismo:</strong> A falta de atividade física aumenta riscos.</li>
+                </ul>
+
+                <div class="warning-box" data-i18n="riskWarning">
+                    <strong>Atenção:</strong> Se você possui mais de um fator de risco, converse com seu médico.
+                </div>
+            </div>
+
+            <div class="content-section">
+                <h3 data-i18n="healthyTitle">Hábitos Saudáveis para Prevenção</h3>
+                <p data-i18n="healthyIntro">Embora não seja possível prevenir completamente o câncer de próstata, hábitos saudáveis reduzem riscos:</p>
+
                 <ul class="custom-list">
-                    <li><strong>Alimentação balanceada:</strong> Priorize frutas, verduras, legumes, grãos integrais e proteínas magras. Estudos indicam que tomate, brócolis e soja podem ter efeito protetor.</li>
-                    <li><strong>Atividade física regular:</strong> Pratique pelo menos 150 minutos de exercícios moderados por semana. Caminhada, corrida, natação e ciclismo são excelentes opções.</li>
-                    <li><strong>Mantenha o peso ideal:</strong> O excesso de peso está relacionado a formas mais agressivas de câncer. Mantenha seu IMC dentro da faixa saudável.</li>
-                    <li><strong>Reduza gorduras saturadas:</strong> Limite o consumo de carnes vermelhas, embutidos, frituras e alimentos processados.</li>
-                    <li><strong>Evite álcool e tabaco:</strong> O consumo excessivo de álcool e o tabagismo aumentam o risco de diversos tipos de câncer.</li>
-                    <li><strong>Aumente o consumo de licopeno:</strong> Presente no tomate, goiaba e melancia, o licopeno tem propriedades antioxidantes.</li>
-                    <li><strong>Beba água:</strong> Mantenha-se hidratado, consumindo pelo menos 2 litros de água por dia.</li>
-                    <li><strong>Controle o estresse:</strong> O estresse crônico pode afetar o sistema imunológico. Pratique técnicas de relaxamento.</li>
+                    <li data-i18n="habitDiet"><strong>Alimentação balanceada:</strong> Rica em frutas e vegetais.</li>
+                    <li data-i18n="habitExercise"><strong>Atividade física regular:</strong> Pelo menos 150 minutos semanais.</li>
+                    <li data-i18n="habitWeight"><strong>Peso ideal:</strong> Reduz riscos de câncer agressivo.</li>
+                    <li data-i18n="habitFat"><strong>Reduza gorduras saturadas:</strong> Evite carnes processadas.</li>
+                    <li data-i18n="habitAlcohol"><strong>Evite álcool e tabaco:</strong> Ambos aumentam riscos.</li>
+                    <li data-i18n="habitLycopene"><strong>Consuma licopeno:</strong> Tomate, melancia e goiaba.</li>
+                    <li data-i18n="habitWater"><strong>Beba água:</strong> Pelo menos 2 litros ao dia.</li>
+                    <li data-i18n="habitStress"><strong>Controle o estresse:</strong> Técnicas de relaxamento ajudam.</li>
+                    <li data-i18n="habitSmoke"><strong>Não fume:</strong> O tabaco aumenta riscos significativamente.</li>
                 </ul>
             </div>
 
             <div class="content-section">
-                <h3>Alimentos Protetores</h3>
+                <h3 data-i18n="foodsProtect">Alimentos Protetores</h3>
                 <div class="grid-two">
                     <div class="card">
-                        <h4>🍅 Tomate</h4>
-                        <p>Rico em licopeno, antioxidante que pode ajudar a proteger as células da próstata. Melhor absorvido quando cozido.</p>
+                        <h4 data-i18n="foodTomato">🍅 Tomate</h4>
+                        <p data-i18n="foodTomatoText">Rico em licopeno antioxidante.</p>
                     </div>
+
                     <div class="card">
-                        <h4>🥦 Crucíferos</h4>
-                        <p>Brócolis, couve-flor e repolho contêm compostos que podem ajudar na prevenção do câncer.</p>
+                        <h4 data-i18n="foodBroccoli">🥦 Crucíferos</h4>
+                        <p data-i18n="foodBroccoliText">Brócolis e couve ajudam na prevenção.</p>
                     </div>
+
                     <div class="card">
-                        <h4>🫘 Soja</h4>
-                        <p>Rica em isoflavonas, que podem ter efeito protetor contra cânceres hormônio-dependentes.</p>
+                        <h4 data-i18n="foodSoy">🫘 Soja</h4>
+                        <p data-i18n="foodSoyText">Rica em isoflavonas protetoras.</p>
                     </div>
+
                     <div class="card">
-                        <h4>🐟 Peixes</h4>
-                        <p>Ricos em ômega-3, especialmente salmão, sardinha e atum, têm propriedades anti-inflamatórias.</p>
+                        <h4 data-i18n="foodFish">🐟 Peixes</h4>
+                        <p data-i18n="foodFishText">Ômega-3 com ação anti-inflamatória.</p>
                     </div>
                 </div>
             </div>
 
             <div class="content-section">
-                <h3>Sinais de Alerta</h3>
-                <div class="info-box">
-                    <p><strong>Importante:</strong> Na fase inicial, o câncer de próstata geralmente não apresenta sintomas. Por isso os exames preventivos são fundamentais e insubstituíveis!</p>
+                <h3 data-i18n="alertSigns">Sinais de Alerta</h3>
+                <div class="info-box" data-i18n="alertImportant">
+                    <p><strong>Importante:</strong> O câncer inicial costuma ser assintomático.</p>
                 </div>
-                
-                <p>Em estágios mais avançados, podem surgir os seguintes sintomas:</p>
-                
+
+                <p data-i18n="alertText">Em estágios avançados, podem surgir:</p>
+
                 <ul class="custom-list risk-list">
-                    <li>Dificuldade ou dor ao urinar</li>
-                    <li>Necessidade de urinar mais vezes durante o dia ou à noite (urgência urinária)</li>
-                    <li>Sangue na urina ou no sêmen</li>
-                    <li>Jato urinário fraco ou interrompido</li>
-                    <li>Dor na região pélvica, costas ou quadris</li>
-                    <li>Dor óssea persistente</li>
-                    <li>Infecção urinária recorrente</li>
-                    <li>Retenção urinária (incapacidade de urinar)</li>
+                    <li data-i18n="symptom1">Dificuldade ao urinar</li>
+                    <li data-i18n="symptom2">Urgência urinária</li>
+                    <li data-i18n="symptom3">Sangue na urina</li>
+                    <li data-i18n="symptom4">Jato urinário fraco</li>
+                    <li data-i18n="symptom5">Dor pélvica ou nas costas</li>
+                    <li data-i18n="symptom6">Dor óssea persistente</li>
+                    <li data-i18n="symptom7">Infecções urinárias</li>
+                    <li data-i18n="symptom8">Retenção urinária</li>
                 </ul>
 
-                <div class="warning-box">
-                    <strong>Se você apresentar qualquer um desses sintomas, procure um urologista imediatamente!</strong> Mesmo que não seja câncer, esses sinais indicam que algo não está bem e merece atenção médica.
+                <div class="warning-box" data-i18n="alertWarning">
+                    <strong>Se tiver sintomas, procure um urologista imediatamente!</strong>
                 </div>
             </div>
 
             <div class="content-section">
-                <h3>Check-up Completo</h3>
-                <p>A prevenção do câncer de próstata faz parte de um cuidado integral com a saúde masculina. Aproveite a consulta ao urologista para verificar também:</p>
+                <h3 data-i18n="checkupTitle">Check-up Completo</h3>
+                <p data-i18n="checkupIntro">A prevenção do câncer faz parte do cuidado geral masculino:</p>
                 
                 <ul class="custom-list">
-                    <li>Pressão arterial</li>
-                    <li>Níveis de colesterol e triglicerídeos</li>
-                    <li>Glicemia (diabetes)</li>
-                    <li>Função renal</li>
-                    <li>Saúde cardiovascular</li>
-                    <li>Peso e índice de massa corporal</li>
+                    <li data-i18n="checkPressao">Pressão arterial</li>
+                    <li data-i18n="checkColesterol">Colesterol e triglicerídeos</li>
+                    <li data-i18n="checkDiabetes">Glicemia</li>
+                    <li data-i18n="checkRins">Função renal</li>
+                    <li data-i18n="checkCardio">Saúde cardiovascular</li>
+                    <li data-i18n="checkImc">Peso e IMC</li>
                 </ul>
 
-                <div class="info-box" style="margin-top: 2rem;">
-                    <strong>Lembre-se:</strong> Prevenção é sempre melhor que tratamento. Cuide da sua saúde regularmente, não apenas quando algo dói. Homens que fazem check-ups regulares vivem mais e melhor!
+                <div class="info-box" data-i18n="checkupFinal">
+                    <strong>Lembre-se:</strong> Prevenção é sempre melhor que tratamento.
                 </div>
             </div>
         </div>
@@ -133,9 +155,36 @@
 
     <footer>
         <div class="container">
-            <p><strong>Novembro Azul</strong> - Campanha de Conscientização sobre a Saúde do Homem</p>
-            <p style="margin-top: 0.5rem; opacity: 0.8;">Prevenir é o melhor remédio. Cuide-se!</p>
+            <p data-i18n="footer1"><strong>Novembro Azul</strong> - Campanha de Conscientização</p>
+            <p data-i18n="footer2" style="margin-top: 0.5rem; opacity: 0.8;">Prevenir é o melhor remédio. Cuide-se!</p>
         </div>
     </footer>
+
+    <!-- SCRIPT I18N -->
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+    <script>
+    async function changeLanguage(lang) {
+            const response = await fetch(`lang/${lang}.json`);
+            const translations = await response.json();
+
+            i18next.init({
+                lng: lang,
+                resources: { [lang]: { translation: translations } }
+            }, () => {
+                document.querySelectorAll("[data-i18n]").forEach(el => {
+                    const key = el.dataset.i18n;
+                    el.innerHTML = i18next.t(key);
+                });
+            });
+
+            localStorage.setItem("language", lang);
+        }
+
+        window.onload = () => {
+            const saved = localStorage.getItem("language") || "pt";
+            changeLanguage(saved);
+        };
+    </script>
+
 </body>
 </html>

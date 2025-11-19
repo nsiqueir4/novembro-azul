@@ -3,182 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novembro Azul - Exames</title>
+    <title data-i18n="pageTitle">Novembro Azul - Exames</title>
     <link rel="stylesheet" href="exames.css">
 </head>
+
 <body>
+
+    <!-- Troca de idioma -->
+    <div class="lang-switch">
+        <img src="https://flagcdn.com/w20/br.png" onclick="changeLanguage('pt')" alt="PT" title="Português">
+        <img src="https://flagcdn.com/w20/us.png" onclick="changeLanguage('en')" alt="EN" title="English">
+        <img src="https://flagcdn.com/w20/es.png" onclick="changeLanguage('es')" alt="ES" title="Español">
+        <img src="https://flagcdn.com/w20/fr.png" onclick="changeLanguage('fr')" alt="FR" title="Français">
+        <img src="https://flagcdn.com/w20/de.png" onclick="changeLanguage('de')" alt="DE" title="Deutsch">
+        <img src="https://flagcdn.com/w20/it.png" onclick="changeLanguage('it')" alt="IT" title="Italiano">
+        <img src="https://flagcdn.com/w20/cn.png" onclick="changeLanguage('zh')" alt="ZH" title="中文">
+        <img src="https://flagcdn.com/w20/jp.png" onclick="changeLanguage('ja')" alt="JA" title="日本語">
+        <img src="https://flagcdn.com/w20/sa.png" onclick="changeLanguage('ar')" alt="AR" title="العربية">
+    </div>
+
     <header>
         <div class="container">
-            <h1>🔵 Novembro Azul</h1>
-            <p class="subtitle">Conscientização sobre a saúde do homem</p>
+            <h1 data-i18n="headerTitle">🔵 Novembro Azul</h1>
+            <p class="subtitle" data-i18n="headerSubtitle">Conscientização sobre a saúde do homem</p>
         </div>
     </header>
 
     <nav>
         <div class="container">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="prevencao.html">Prevenção</a></li>
-                <li><a href="exames.html" class="active">Exames</a></li>
+                <li><a href="index.html" data-i18n="menuHome">Início</a></li>
+                <li><a href="prevencao.html" data-i18n="menuPrev">Prevenção</a></li>
+                <li><a href="exames.html" class="active" data-i18n="menuExam">Exames</a></li>
+                <li><a href="https://wa.me/?text=Olá! Tenho dúvidas sobre saúde masculina e o Novembro Azul" target="_blank" style="background: #25d366; color: white; border-radius: 4px; padding: 0.5rem 1rem; display: inline-block;">💬 Dicas e Cuidados</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
         <div class="container">
+
+            <!-- HERO -->
             <div class="hero">
-                <h2>Exames e Diagnóstico</h2>
-                <p>O diagnóstico precoce salva vidas. Conheça os principais exames e tire suas dúvidas.</p>
+                <h2 data-i18n="examTitle">Exames e Diagnóstico</h2>
+                <p data-i18n="examText">
+                    O diagnóstico precoce salva vidas. Conheça os principais exames e tire suas dúvidas.
+                </p>
             </div>
 
+            <!-- PRINCIPAIS EXAMES -->
             <div class="content-section">
-                <h3>Principais Exames</h3>
-                <p>O diagnóstico do câncer de próstata envolve uma combinação de exames. Nenhum deles sozinho é definitivo, por isso a avaliação médica completa é fundamental.</p>
-                
+
+                <h3 data-i18n="mainExams">Principais Exames</h3>
+                <p data-i18n="mainExamsDesc">
+                    O diagnóstico do câncer de próstata envolve diferentes exames. Nenhum deles sozinho é definitivo.
+                </p>
+
+                <!-- PSA -->
                 <div class="exam-card">
-                    <h4>🩸 PSA (Antígeno Prostático Específico)</h4>
-                    <p><strong>O que é:</strong> Exame de sangue que mede a quantidade de uma proteína (PSA) produzida pela próstata. É um marcador que pode indicar problemas na glândula.</p>
-                    <p style="margin-top: 1rem;"><strong>Como funciona:</strong> Uma amostra de sangue é coletada e enviada ao laboratório. O resultado geralmente sai em poucos dias.</p>
-                    <p style="margin-top: 1rem;"><strong>Valores de referência:</strong> Normalmente, níveis abaixo de 4 ng/ml são considerados normais, mas isso varia com a idade. Níveis elevados podem indicar câncer, mas também podem ser causados por infecções, hiperplasia benigna ou inflamação.</p>
+                    <h4 data-i18n="psaTitle">🩸 PSA (Antígeno Prostático Específico)</h4>
+                    <p data-i18n="psaWhat"><strong>O que é:</strong> Exame de sangue que mede a proteína PSA produzida pela próstata.</p>
+                    <p data-i18n="psaHow" style="margin-top: 1rem;"><strong>Como funciona:</strong> Uma pequena amostra de sangue é coletada para análise.</p>
+                    <p data-i18n="psaRef" style="margin-top: 1rem;"><strong>Valores:</strong> Geralmente abaixo de 4 ng/ml, variando conforme idade.</p>
                 </div>
 
+                <!-- TOQUE RETAL -->
                 <div class="exam-card" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                    <h4>👆 Exame de Toque Retal</h4>
-                    <p><strong>O que é:</strong> Permite ao médico avaliar diretamente o tamanho, forma e textura da próstata através do reto.</p>
-                    <p style="margin-top: 1rem;"><strong>Como funciona:</strong> O médico urologista, usando luva lubrificada, examina a próstata com o dedo. O procedimento é rápido, dura poucos segundos e não causa dor.</p>
-                    <p style="margin-top: 1rem;"><strong>Por que é importante:</strong> Pode detectar alterações que o PSA não identifica. Cerca de 20% dos cânceres de próstata são detectados apenas pelo toque retal, mesmo com PSA normal.</p>
+                    <h4 data-i18n="touchTitle">👆 Exame de Toque Retal</h4>
+                    <p data-i18n="touchWhat"><strong>O que é:</strong> Avaliação física da próstata feita pelo médico.</p>
+                    <p data-i18n="touchHow" style="margin-top: 1rem;"><strong>Como funciona:</strong> O médico examina a próstata com o dedo pelo reto.</p>
+                    <p data-i18n="touchWhy" style="margin-top: 1rem;"><strong>Importância:</strong> Pode detectar alterações que o PSA não mostra.</p>
                 </div>
 
+                <!-- BIÓPSIA -->
                 <div class="exam-card" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                    <h4>🔬 Biópsia</h4>
-                    <p><strong>O que é:</strong> Único exame que pode confirmar definitivamente o diagnóstico de câncer. Pequenos fragmentos da próstata são coletados para análise microscópica.</p>
-                    <p style="margin-top: 1rem;"><strong>Quando é indicada:</strong> Quando há alterações no PSA ou no toque retal que sugerem a possibilidade de câncer.</p>
-                    <p style="margin-top: 1rem;"><strong>Como funciona:</strong> Realizada com auxílio de ultrassom transretal, geralmente com anestesia local. O procedimento leva cerca de 10-15 minutos.</p>
+                    <h4 data-i18n="biopsyTitle">🔬 Biópsia</h4>
+                    <p data-i18n="biopsyWhat"><strong>O que é:</strong> Exame que confirma o diagnóstico ao analisar fragmentos da próstata.</p>
+                    <p data-i18n="biopsyWhen" style="margin-top: 1rem;"><strong>Quando é indicada:</strong> Quando PSA ou toque indicam alterações suspeitas.</p>
+                    <p data-i18n="biopsyHow" style="margin-top: 1rem;"><strong>Como funciona:</strong> Coleta guiada por ultrassom, com anestesia local.</p>
                 </div>
 
-                <div class="success-box">
-                    <strong>Lembre-se:</strong> O PSA e o toque retal são complementares. Um resultado normal no PSA não dispensa o toque retal, e vice-versa. Juntos, eles oferecem a melhor avaliação da saúde da próstata.
+                <div class="success-box" data-i18n="combinedInfo">
+                    <strong>Lembre-se:</strong> PSA e toque retal são complementares — juntos são mais eficazes.
                 </div>
             </div>
 
+            <!-- QUANDO COMEÇAR -->
             <div class="content-section">
-                <h3>Quando Começar os Exames?</h3>
-                <p>A idade recomendada para iniciar os exames varia de acordo com os fatores de risco individuais:</p>
-                
+                <h3 data-i18n="whenStart">Quando Começar os Exames?</h3>
+                <p data-i18n="whenStartDesc">A idade recomendada depende dos fatores de risco:</p>
+
                 <div class="timeline">
+
                     <div class="timeline-item">
                         <div class="timeline-marker">45</div>
                         <div class="timeline-content">
-                            <h4>45 anos - Grupo de Alto Risco</h4>
-                            <p>Homens da raça negra ou com histórico familiar de câncer de próstata (pai, irmão ou filho) devem iniciar os exames aos 45 anos.</p>
+                            <h4 data-i18n="start45Title">45 anos — Alto Risco</h4>
+                            <p data-i18n="start45Text">Homens negros ou com histórico familiar direto.</p>
                         </div>
                     </div>
-                    
+
                     <div class="timeline-item">
                         <div class="timeline-marker">50</div>
                         <div class="timeline-content">
-                            <h4>50 anos - Risco Padrão</h4>
-                            <p>Homens sem fatores de risco específicos devem começar os exames preventivos aos 50 anos.</p>
+                            <h4 data-i18n="start50Title">50 anos — Risco Padrão</h4>
+                            <p data-i18n="start50Text">Homens sem fatores de risco.</p>
                         </div>
                     </div>
-                    
+
                     <div class="timeline-item">
                         <div class="timeline-marker">75</div>
                         <div class="timeline-content">
-                            <h4>Após os 75 anos</h4>
-                            <p>A continuidade dos exames após essa idade deve ser discutida com o médico, levando em conta a expectativa de vida e condições de saúde gerais.</p>
+                            <h4 data-i18n="start75Title">Após os 75 anos</h4>
+                            <p data-i18n="start75Text">A necessidade deve ser avaliada individualmente.</p>
                         </div>
                     </div>
+
                 </div>
 
-                <div class="info-box">
-                    <strong>Frequência dos exames:</strong> Caso os resultados estejam normais, os exames devem ser repetidos anualmente. Se houver alterações, o médico definirá a periodicidade adequada para acompanhamento.
+                <div class="info-box" data-i18n="freqWarning">
+                    A frequência dos exames deve ser combinada com o médico.
                 </div>
             </div>
 
+            <!-- MITOS E TABUS -->
             <div class="content-section">
-                <h3>Quebrando Mitos e Tabus</h3>
-                <p>Existem muitos mitos em torno dos exames de próstata. Vamos esclarecer alguns deles:</p>
-                
-                <div class="content-section">
-    <h3>Quebrando Mitos e Tabus</h3>
-    <p>Existem muitos mitos em torno dos exames de próstata. Vamos esclarecer alguns deles:</p>
-    
-    <div class="myth-fact">
-        <div class="myth">
-            <h4>❌ MITO</h4>
-            <p>“O exame de toque retal é doloroso.”</p>
-        </div>
-        <div class="fact">
-            <h4>✔ FATO</h4>
-            <p>O procedimento dura apenas alguns segundos e, na maioria das vezes, não dói. Pode causar apenas um leve desconforto.</p>
-        </div>
-    </div>
+                <h3 data-i18n="breakingTaboos">Quebrando Mitos e Tabus</h3>
+                <p data-i18n="tabooIntro">Existem muitos mitos sobre os exames. Vamos esclarecer:</p>
 
-    <div class="myth-fact">
-        <div class="myth">
-            <h4>❌ MITO</h4>
-            <p>“Se o PSA der normal, não preciso fazer o toque.”</p>
-        </div>
-        <div class="fact">
-            <h4>✔ FATO</h4>
-            <p>Os exames são complementares. Cerca de 20% dos casos são detectados apenas pelo toque, mesmo com PSA normal.</p>
-        </div>
-    </div>
+                <!-- MITO x FATO -->
+                <div class="myth-fact">
+                    <div class="myth">
+                        <h4>❌ <span data-i18n="myth1Title">MITO</span></h4>
+                        <p data-i18n="myth1">“O exame de toque é doloroso.”</p>
+                    </div>
+                    <div class="fact">
+                        <h4>✔ <span data-i18n="fact1Title">FATO</span></h4>
+                        <p data-i18n="fact1">O exame dura poucos segundos e raramente causa dor.</p>
+                    </div>
+                </div>
 
-    <div class="myth-fact">
-        <div class="myth">
-            <h4>❌ MITO</h4>
-            <p>“Câncer de próstata só acontece em idosos.”</p>
-        </div>
-        <div class="fact">
-            <h4>✔ FATO</h4>
-            <p>Embora seja mais comum após os 50 anos, homens a partir dos 45 (ou antes, se houver histórico familiar) já devem se prevenir.</p>
-        </div>
-    </div>
+                <div class="myth-fact">
+                    <div class="myth">
+                        <h4>❌ <span data-i18n="myth2Title">MITO</span></h4>
+                        <p data-i18n="myth2">“Se o PSA estiver normal, não precisa toque.”</p>
+                    </div>
+                    <div class="fact">
+                        <h4>✔ <span data-i18n="fact2Title">FATO</span></h4>
+                        <p data-i18n="fact2">Os exames são complementares.</p>
+                    </div>
+                </div>
 
-    <div class="myth-fact">
-        <div class="myth">
-            <h4>❌ MITO</h4>
-            <p>“O exame de toque afeta minha masculinidade.”</p>
-        </div>
-        <div class="fact">
-            <h4>✔ FATO</h4>
-            <p>O exame é um procedimento médico como qualquer outro. Cuidar da saúde é um ato de responsabilidade e autocuidado.</p>
-        </div>
-    </div>
+                <div class="myth-fact">
+                    <div class="myth">
+                        <h4>❌ <span data-i18n="myth3Title">MITO</span></h4>
+                        <p data-i18n="myth3">"Só idosos têm câncer de próstata."</p>
+                    </div>
+                    <div class="fact">
+                        <h4>✔ <span data-i18n="fact3Title">FATO</span></h4>
+                        <p data-i18n="fact3">Homens a partir de 45 já necessitam atenção.</p>
+                    </div>
+                </div>
 
-    <div class="myth-fact">
-        <div class="myth">
-            <h4>❌ MITO</h4>
-            <p>“Todos os casos de câncer de próstata apresentam sintomas.”</p>
-        </div>
-        <div class="fact">
-            <h4>✔ FATO</h4>
-            <p>Muitos casos são silenciosos no início. Por isso o diagnóstico precoce é tão importante.</p>
-        </div>
-    </div>
+                <div class="myth-fact">
+                    <div class="myth">
+                        <h4>❌ <span data-i18n="myth4Title">MITO</span></h4>
+                        <p data-i18n="myth4">"O toque mexe com a masculinidade."</p>
+                    </div>
+                    <div class="fact">
+                        <h4>✔ <span data-i18n="fact4Title">FATO</span></h4>
+                        <p data-i18n="fact4">É apenas um procedimento médico.</p>
+                    </div>
+                </div>
 
-    <div class="myth-fact">
-        <div class="myth">
-            <h4>❌ MITO</h4>
-            <p>“A biópsia é sempre necessária.”</p>
-        </div>
-        <div class="fact">
-            <h4>✔ FATO</h4>
-            <p>A biópsia só é indicada quando existem alterações suspeitas no PSA ou no toque. Nem todo homem precisará passar por ela.</p>
-        </div>
-    </div>
+                <div class="myth-fact">
+                    <div class="myth">
+                        <h4>❌ <span data-i18n="myth5Title">MITO</span></h4>
+                        <p data-i18n="myth5">"Todos os casos têm sintomas."</p>
+                    </div>
+                    <div class="fact">
+                        <h4>✔ <span data-i18n="fact5Title">FATO</span></h4>
+                        <p data-i18n="fact5">Muitos casos são silenciosos.</p>
+                    </div>
+                </div>
 
-    <div class="myth-fact">
-        <div class="myth">
-            <h4>❌ MITO</h4>
-            <p>“O tratamento do câncer de próstata sempre causa impotência.”</p>
-        </div>
-        <div class="fact">
-            <h4>✔ FATO</h4>
-            <p>Os tratamentos evoluíram muito. Muitos homens mantêm sua vida sexual normal, dependendo do estágio da doença e do tipo de tratamento.</p>
-        </div>
-    </div>
+                <div class="myth-fact">
+                    <div class="myth">
+                        <h4>❌ <span data-i18n="myth6Title">MITO</span></h4>
+                        <p data-i18n="myth6">"Biópsia sempre é necessária."</p>
+                    </div>
+                    <div class="fact">
+                        <h4>✔ <span data-i18n="fact6Title">FATO</span></h4>
+                        <p data-i18n="fact6">Ela só é indicada em casos suspeitos.</p>
+                    </div>
+                </div>
 
-</div>
+                <div class="myth-fact">
+                    <div class="myth">
+                        <h4>❌ <span data-i18n="myth7Title">MITO</span></h4>
+                        <p data-i18n="myth7">"O tratamento sempre causa impotência."</p>
+                    </div>
+                    <div class="fact">
+                        <h4>✔ <span data-i18n="fact7Title">FATO</span></h4>
+                        <p data-i18n="fact7">Tratamentos modernos preservam a função sexual.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p data-i18n="footer1"><strong>Novembro Azul</strong> - Campanha de Conscientização</p>
+            <p data-i18n="footer2" style="margin-top: .5rem;">Prevenir é o melhor remédio</p>
+        </div>
+    </footer>
+
+    <!-- I18NEXT -->
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+
+    <script>
+        async function changeLanguage(lang) {
+            const response = await fetch(`lang/${lang}.json`);
+            const translations = await response.json();
+
+            i18next.init({
+                lng: lang,
+                resources: { [lang]: { translation: translations } }
+            }, () => {
+                document.querySelectorAll("[data-i18n]").forEach(el => {
+                    const key = el.dataset.i18n;
+                    el.innerHTML = i18next.t(key);
+                });
+            });
+
+            localStorage.setItem("language", lang);
+        }
+
+        window.onload = () => {
+            const saved = localStorage.getItem("language") || "pt";
+            changeLanguage(saved);
+        };
+    </script>
+
+</body>
+</html>

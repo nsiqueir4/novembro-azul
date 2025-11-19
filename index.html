@@ -3,193 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Novembro Azul - Prevenção e Saúde Masculina</title>
+    <title data-i18n="pageTitle">Novembro Azul - Prevenção e Saúde Masculina</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+
+    <div class="lang-switch">
+        <img src="https://flagcdn.com/w20/br.png" onclick="changeLanguage('pt')" alt="PT" title="Português">
+        <img src="https://flagcdn.com/w20/us.png" onclick="changeLanguage('en')" alt="EN" title="English">
+        <img src="https://flagcdn.com/w20/es.png" onclick="changeLanguage('es')" alt="ES" title="Español">
+        <img src="https://flagcdn.com/w20/fr.png" onclick="changeLanguage('fr')" alt="FR" title="Français">
+        <img src="https://flagcdn.com/w20/de.png" onclick="changeLanguage('de')" alt="DE" title="Deutsch">
+        <img src="https://flagcdn.com/w20/it.png" onclick="changeLanguage('it')" alt="IT" title="Italiano">
+        <img src="https://flagcdn.com/w20/cn.png" onclick="changeLanguage('zh')" alt="ZH" title="中文">
+        <img src="https://flagcdn.com/w20/jp.png" onclick="changeLanguage('ja')" alt="JA" title="日本語">
+        <img src="https://flagcdn.com/w20/sa.png" onclick="changeLanguage('ar')" alt="AR" title="العربية">
+    </div>
+
+
     <header>
         <div class="container">
-            <h1>Novembro Azul</h1>
-            <p class="subtitle">Conscientização sobre a saúde do homem</p>
+            <h1 data-i18n="headerTitle">🔵 Novembro Azul</h1>
+            <p class="subtitle" data-i18n="headerSubtitle">Conscientização sobre a saúde do homem</p>
         </div>
     </header>
 
     <nav>
         <div class="container">
             <ul>
-                <li><a href="index.html" class="nav-link active">Início</a></li>
-                <li><a href="prevencao.html" class="nav-link">Prevenção</a></li>
-                <li><a href="exames.html" class="nav-link">Exames</a></li>
+                <li><a href="index.html" class="nav-link active" data-i18n="menuHome">Início</a></li>
+                <li><a href="prevencao.html" class="nav-link" data-i18n="menuPrev">Prevenção</a></li>
+                <li><a href="exames.html" class="nav-link" data-i18n="menuExam">Exames</a></li>
+                <li><a href="https://wa.me/?text=Olá! Tenho dúvidas sobre saúde masculina e o Novembro Azul" target="_blank" style="background: #25d366; color: white; border-radius: 4px; padding: 0.5rem 1rem; display: inline-block;">💬 Dicas e Cuidados</a></li>
             </ul>
         </div>
     </nav>
 
     <main>
         <div class="container">
-            <!-- Página 1: Início -->
+
+            <!-- Página: Início -->
             <div id="home" class="page active">
+
                 <div class="hero">
-                    <h2>O que é o Novembro Azul?</h2>
-                    <p>Uma campanha mundial de conscientização sobre a saúde do homem, com foco na prevenção e diagnóstico precoce do câncer de próstata.</p>
+                    <h2 data-i18n="homeTitle">O que é o Novembro Azul?</h2>
+                    <p data-i18n="homeDesc">
+                        Uma campanha mundial de conscientização sobre a saúde do homem...
+                    </p>
                 </div>
 
                 <div class="content-section">
-                    <h3>A Importância da Campanha</h3>
-                    <p>O Novembro Azul surgiu na Austrália, em 2003, e desde então se espalhou pelo mundo. No Brasil, a campanha foi criada pelo Instituto Lado a Lado pela Vida em parceria com a Sociedade Brasileira de Urologia (SBU).</p>
-                    
+                    <h3 data-i18n="importanceTitle">A Importância da Campanha</h3>
+                    <p data-i18n="importanceText">
+                        O Novembro Azul surgiu na Austrália em 2003...
+                    </p>
+
                     <div class="stats-grid">
                         <div class="stat-card">
                             <div class="stat-number">65 mil</div>
-                            <p>Novos casos por ano no Brasil</p>
+                            <p data-i18n="whyDesc1">Novos casos por ano no Brasil</p>
                         </div>
                         <div class="stat-card">
                             <div class="stat-number">2º</div>
-                            <p>Câncer mais comum em homens</p>
+                            <p data-i18n="whyDesc1">Câncer mais comum em homens</p>
                         </div>
                         <div class="stat-card">
                             <div class="stat-number">90%</div>
-                            <p>Taxa de cura com diagnóstico precoce</p>
+                            <p data-i18n="whyDesc2">Taxa de cura com diagnóstico precoce</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="content-section">
-                    <h3>Por que se fala tanto em próstata?</h3>
-                    <p>A próstata é uma glândula do sistema reprodutor masculino, localizada abaixo da bexiga. O câncer de próstata é um dos mais incidentes entre os homens, mas quando diagnosticado precocemente, tem altas chances de cura.</p>
-                    
-                    <div class="info-box">
-                        <strong>Importante:</strong> Muitos homens ainda resistem em realizar os exames preventivos devido a preconceitos. A campanha Novembro Azul busca quebrar esses tabus e incentivar o cuidado com a saúde masculina.
+                    <h3 data-i18n="whyProstate">Por que se fala tanto em próstata?</h3>
+
+                    <p data-i18n="whyProstateText">
+                        A próstata é uma glândula do sistema reprodutor masculino...
+                    </p>
+
+                    <div class="info-box" data-i18n="prostateWarning">
+                        <strong>Importante:</strong> Muitos homens ainda resistem em realizar os exames...
                     </div>
                 </div>
+
             </div>
 
-            <!-- Página 2: Prevenção -->
+            <!-- Página: Prevenção -->
             <div id="prevencao" class="page">
+
                 <div class="hero">
-                    <h2>Prevenção e Cuidados</h2>
-                    <p>Hábitos saudáveis podem reduzir significativamente o risco de desenvolver câncer de próstata.</p>
+                    <h2 data-i18n="prevTitle">Prevenção e Cuidados</h2>
+                    <p data-i18n="prevText">Hábitos saudáveis podem reduzir...</p>
                 </div>
 
                 <div class="content-section">
-                    <h3>Fatores de Risco</h3>
+                    <h3 data-i18n="riskFactors">Fatores de Risco</h3>
+
                     <ul class="custom-list">
-                        <li><strong>Idade:</strong> O risco aumenta após os 50 anos</li>
-                        <li><strong>Histórico familiar:</strong> Ter pai ou irmão com a doença aumenta o risco</li>
-                        <li><strong>Obesidade:</strong> Estudos mostram relação entre excesso de peso e a doença</li>
-                        <li><strong>Alimentação inadequada:</strong> Dieta rica em gorduras e pobre em vegetais</li>
+                        <li data-i18n="riskAge"></li>
+                        <li data-i18n="riskFamily"></li>
+                        <li data-i18n="riskRace"></li>
+                        <li data-i18n="riskDiet"></li>
                     </ul>
                 </div>
 
                 <div class="content-section">
-                    <h3>Hábitos Saudáveis para Prevenção</h3>
+                    <h3 data-i18n="healthyTitle">Hábitos Saudáveis</h3>
+
                     <ul class="custom-list">
-                        <li>Manter uma alimentação balanceada, rica em frutas, verduras e legumes</li>
-                        <li>Praticar atividades físicas regularmente (pelo menos 30 minutos por dia)</li>
-                        <li>Manter o peso corporal adequado</li>
-                        <li>Evitar o consumo excessivo de álcool</li>
-                        <li>Não fumar</li>
-                        <li>Reduzir o consumo de carnes vermelhas e alimentos processados</li>
-                        <li>Aumentar o consumo de tomate, brócolis e soja</li>
+                        <li data-i18n="habitDiet"></li>
+                        <li data-i18n="habitExercise"></li>
+                        <li data-i18n="habitWeight"></li>
+                        <li data-i18n="habitAlcohol"></li>
+                        <li data-i18n="habitFat"></li>
+                        <li data-i18n="habitLycopene"></li>
                     </ul>
                 </div>
 
                 <div class="content-section">
-                    <h3>Sinais de Alerta</h3>
+                    <h3 data-i18n="alertSigns">Sinais de Alerta</h3>
+
                     <div class="info-box">
-                        <p>Na fase inicial, o câncer de próstata pode não apresentar sintomas. Por isso os exames preventivos são fundamentais. Em estágios mais avançados, podem surgir:</p>
+                        <strong>Importante:</strong> <span data-i18n="alertImportant">O câncer inicial costuma ser assintomático.</span>
                     </div>
+
                     <ul class="custom-list">
-                        <li>Dificuldade para urinar</li>
-                        <li>Necessidade de urinar mais vezes durante o dia ou à noite</li>
-                        <li>Sangue na urina</li>
-                        <li>Dor óssea</li>
-                        <li>Infecção urinária recorrente</li>
+                        <li data-i18n="symptom1">Dificuldade ao urinar</li>
+                        <li data-i18n="symptom2">Urgência urinária</li>
+                        <li data-i18n="symptom3">Sangue na urina</li>
+                        <li data-i18n="symptom4">Jato urinário fraco</li>
                     </ul>
                 </div>
+
             </div>
 
-            <!-- Página 3: Exames -->
+            <!-- Página: Exames -->
             <div id="exames" class="page">
+
                 <div class="hero">
-                    <h2>Exames e Diagnóstico</h2>
-                    <p>O diagnóstico precoce salva vidas. Conheça os principais exames.</p>
+                    <h2 data-i18n="examTitle">Exames e Diagnóstico</h2>
+                    <p data-i18n="examText">O diagnóstico precoce salva vidas.</p>
                 </div>
 
                 <div class="content-section">
-                    <h3>Principais Exames</h3>
-                    
+                    <h3 data-i18n="mainExams">Principais Exames</h3>
+
                     <div class="info-box">
-                        <strong>PSA (Antígeno Prostático Específico)</strong>
-                        <p>Exame de sangue que mede a quantidade de uma proteína produzida pela próstata. Níveis elevados podem indicar problemas, mas não necessariamente câncer.</p>
+                        <strong data-i18n="psaTitle">PSA</strong>
+                        <p data-i18n="psaWhat"></p>
                     </div>
 
                     <div class="info-box">
-                        <strong>Exame de Toque Retal</strong>
-                        <p>Permite ao médico avaliar o tamanho, forma e textura da próstata. É rápido, dura poucos segundos e não causa dor. Essencial para detectar alterações que o PSA pode não identificar.</p>
+                        <strong data-i18n="touchTitle">Toque Retal</strong>
+                        <p data-i18n="touchWhat"></p>
                     </div>
 
                     <div class="info-box">
-                        <strong>Biópsia</strong>
-                        <p>Caso os exames anteriores apresentem alterações, a biópsia é realizada para confirmar ou descartar o diagnóstico de câncer. É o único exame que pode confirmar a doença.</p>
+                        <strong data-i18n="biopsyTitle">Biópsia</strong>
+                        <p data-i18n="biopsyWhat"></p>
                     </div>
                 </div>
 
                 <div class="content-section">
-                    <h3>Quando Começar os Exames?</h3>
+                    <h3 data-i18n="whenStart">Quando Começar os Exames?</h3>
+
                     <ul class="custom-list">
-                        <li><strong>Aos 50 anos:</strong> Homens sem fatores de risco</li>
-                        <li><strong>Aos 45 anos:</strong> Homens com histórico familiar de câncer de próstata</li>
-                        <li><strong>Aos 45 anos:</strong> Homens da raça negra (maior incidência)</li>
+                        <li data-i18n="start50Title"></li>
+                        <li data-i18n="start45Title"></li>
                     </ul>
-                    
-                    <div class="info-box">
-                        <strong>Importante:</strong> A frequência dos exames deve ser definida pelo médico urologista, de acordo com o resultado dos exames anteriores e fatores de risco individuais.
+
+                    <div class="info-box" data-i18n="freqWarning">
                     </div>
                 </div>
 
                 <div class="content-section">
-                    <h3>Quebrando Tabus</h3>
-                    <p>Muitos homens ainda têm receio de realizar os exames preventivos, especialmente o toque retal, por preconceito ou desinformação. É fundamental entender que:</p>
+                    <h3 data-i18n="breakingTaboos">Quebrando Tabus</h3>
+
+                    <p data-i18n="tabooIntro">
+                        Muitos homens têm receio dos exames...
+                    </p>
+
                     <ul class="custom-list">
-                        <li>Os exames são rápidos e indolores</li>
-                        <li>São realizados por profissionais capacitados</li>
-                        <li>Podem salvar sua vida</li>
-                        <li>Cuidar da saúde é um ato de amor próprio e responsabilidade</li>
+                        <li data-i18n="myth1">O exame de toque é doloroso.</li>
+                        <li data-i18n="fact1">O exame dura poucos segundos e raramente causa dor.</li>
+                        <li data-i18n="myth2">Se o PSA estiver normal, não precisa toque.</li>
+                        <li data-i18n="fact2">Os exames são complementares.</li>
                     </ul>
-                    
-                    <div style="text-align: center; margin-top: 2rem;">
-                        <p style="font-size: 1.2rem; margin-bottom: 1rem;"><strong>Cuide-se! Sua saúde é prioridade.</strong></p>
-                        <a href="#" class="cta-button">Agende sua consulta</a>
-                    </div>
                 </div>
+
             </div>
+
         </div>
     </main>
 
     <footer>
         <div class="container">
-            <p><strong>Novembro Azul</strong> - Campanha de Conscientização sobre a Saúde do Homem</p>
-            <p style="margin-top: 0.5rem; opacity: 0.8;">Prevenir é o melhor remédio. Cuide-se!</p>
+            <p data-i18n="footer1"><strong>Novembro Azul</strong> - Campanha de Conscientização</p>
+            <p data-i18n="footer2" style="margin-top: .5rem; opacity: .8;">Prevenir é o melhor remédio</p>
         </div>
     </footer>
 
-    <script>
-        function showPage(pageId) {
-            // Esconde todas as páginas
-            const pages = document.querySelectorAll('.page');
-            pages.forEach(page => page.classList.remove('active'));
-            
-            // Mostra a página selecionada
-            document.getElementById(pageId).classList.add('active');
-            
-            // Atualiza o menu ativo
-            const links = document.querySelectorAll('.nav-link');
-            links.forEach(link => link.classList.remove('active'));
-            event.target.classList.add('active');
-            
-            // Rola para o topo
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }
-    </script>
+    <!-- I18NEXT -->
+    <script src="https://unpkg.com/i18next@latest/dist/umd/i18next.min.js"></script>
+
+
 </body>
+    <script>
+        async function changeLanguage(lang) {
+            const response = await fetch(`lang/${lang}.json`);
+            const translations = await response.json();
+
+            i18next.init({
+                lng: lang,
+                resources: { [lang]: { translation: translations } }
+            }, () => {
+                document.querySelectorAll("[data-i18n]").forEach(el => {
+                    const key = el.dataset.i18n;
+                    el.innerHTML = i18next.t(key);
+                });
+            });
+
+            localStorage.setItem("language", lang);
+        }
+
+        window.onload = () => {
+            const saved = localStorage.getItem("language") || "pt";
+            changeLanguage(saved);
+        };
+
+    </script>
+
 </html>
+    

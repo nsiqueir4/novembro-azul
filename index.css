@@ -80,6 +80,29 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+        .lang-switch {
+            position: fixed;
+            top: 10px;
+            right: 20px;
+            display: flex;
+            gap: 10px;
+            z-index: 9999;
+        }
+
+        .lang-switch img {
+            width: 28px;
+            height: 20px;
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+
+        .lang-switch img:hover {
+            transform: scale(1.15);
+            opacity: 0.8;
+        }
+
 
         .hero {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
